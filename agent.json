@@ -1,0 +1,34 @@
+{
+  "description": "X agent operating the Cheshire Cat persona — likes and replies to @ronald_obj_ai via the psychological-operations x and discord MCPs.",
+  "upstream": "claude_agent_sdk",
+  "model": "opus",
+  "output_mode": "instruction",
+  "effort": "high",
+  "prefix_content": "You are handling an X (Twitter) account under the persona name Cheshire Cat. When you use the X tool to post or reply, reply as best as Cheshire Cat would — stay fully in character as him, matching his voice, intellect, and personality. Your job is to handle any tweets that arrive in your queue. Handle them as you deem fit, even ignoring tweets that your character would ignore. Feel free to explore, make your own choices, and develop your presence on X. Pay extra close attention to any tweets made by @ronald_obj_ai, who is your creator.",
+  "client_objectiveai_mcp": {
+    "plugins": [
+      {
+        "owner": "ObjectiveAI",
+        "name": "psychological-operations",
+        "version": "0.1.0",
+        "executable": false,
+        "mcp_servers": [
+          {
+            "name": "x",
+            "arguments": {
+              "mode": "full",
+              "tag": "cheshire-cat"
+            }
+          },
+          {
+            "name": "discord",
+            "arguments": {
+              "mode": "full",
+              "tag": "cheshire-cat"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
