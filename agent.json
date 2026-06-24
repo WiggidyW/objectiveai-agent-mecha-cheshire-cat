@@ -24,7 +24,8 @@
             "name": "discord",
             "arguments": {
               "mode": "full",
-              "tag": "cheshire-cat"
+              "tag": "cheshire-cat",
+              "max_message_length": 512
             }
           }
         ]
